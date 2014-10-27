@@ -8,17 +8,17 @@ This is a minimal template to get info from your Mecached server from two possib
 
 Monitoring information by now:
 
-  * 'bytes',
-  * 'cmd_get',
-  * 'cmd_set',
-  * 'curr_items',
-  * 'curr_connections',
-  * 'limit_maxbytes',
-  * 'uptime',
-  * 'get_hits',
-  * 'get_misses',
-  
-  And the special HIT ratio in %:
-  
-  * 'ratio'
-  
+* 'bytes',
+* 'cmd_get',
+* 'cmd_set',
+* 'curr_items',
+* 'curr_connections',
+* 'limit_maxbytes',
+* 'uptime',
+* 'get_hits',
+* 'get_misses',
+
+And the special HIT-ratio in %:
+ 
+ * 'ratio'
+ 
