@@ -21,10 +21,11 @@ ITEMS = (
     'get_misses',
 )
 
-########################################################################
-This is based in Enrico Tröger from: http://www.pending.io/yet-another-zabbix-template-to-monitor-memcache/
-but I chose to make it with dictionaries instead of objects.
-########################################################################
+################################################################################
+### This is based in Enrico Tröger sources from: 
+###        http://www.pending.io/yet-another-zabbix-template-to-monitor-memcache/
+### but I chose to make it with dictionaries instead of objects.
+################################################################################
 class MemcachedStatsReader(object):
 
     #----------------------------------------------------------------------
