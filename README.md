@@ -42,7 +42,7 @@ Apply this new template to your Memcached servers.
 
 You don't need to modify the template if you are using the standard port to access to the Memcached (port 11211).
 
-It permits a fast configuration because of you can apply the same template to all your memcached hosts without modification/installation in the agents.
+It permits a fast configuration because of you can apply the same template to all your memcached servers without modification/installation in the agents.
 
 Of course, it can be to work in the agent/client side too.
 
