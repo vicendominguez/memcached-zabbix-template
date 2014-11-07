@@ -55,3 +55,5 @@ I am using this script in my production environment:
 
 Screenshots
 -----------
+
+![Screenshot](img/memcached-zabbix.jpg)
