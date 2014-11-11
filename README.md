@@ -4,7 +4,7 @@ memcached-zabbix-template
 Description
 -----------
 
-This is a minimal template to get info from your Mecached server from two possible places. Via zabbix-agentd in clients or via externalscripts in zabbix server. Choose your option.
+This is a minimal template to get info from your Memcached server from two possible places. Via zabbix-agentd in clients or via externalscripts in zabbix server. Choose your option.
 
 Monitoring information by now:
 
