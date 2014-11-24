@@ -65,7 +65,7 @@ class MemcachedStatsReader(object):
 #----------------------------------------------------------------------
 
 def Usage ():
-        print "Usage: getMemcachedInfo.py -h 127.0.0.1 -P 11211 -a <item>"
+        print "Usage: getMemcachedInfo.py -h 127.0.0.1 -p 11211 -a <item>"
         sys.exit(2)
 
 
