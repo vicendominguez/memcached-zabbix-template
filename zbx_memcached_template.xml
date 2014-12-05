@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2014-11-07T11:12:17Z</date>
+    <date>2014-12-05T13:39:31Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -28,7 +28,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;curr_connections&quot;]</key>
+                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;curr_connections&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -63,6 +63,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Memcached Current items stored</name>
@@ -70,7 +71,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;curr_items&quot;]</key>
+                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;curr_items&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -105,6 +106,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Memcached HITS</name>
@@ -112,7 +114,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;get_hits&quot;]</key>
+                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;get_hits&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -147,6 +149,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Memcached Max Free Memory</name>
@@ -154,7 +157,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;limit_maxbytes&quot;]</key>
+                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;limit_maxbytes&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -189,6 +192,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Memcached MISSES</name>
@@ -196,7 +200,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;get_misses&quot;]</key>
+                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;get_misses&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -231,6 +235,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Memcached successful key ratio</name>
@@ -238,7 +243,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;ratio&quot;]</key>
+                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;ratio&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -273,6 +278,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Memcached Total Get items</name>
@@ -280,7 +286,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;cmd_get&quot;]</key>
+                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;cmd_get&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -315,6 +321,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Memcached Total Set items</name>
@@ -322,7 +329,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;cmd_set&quot;]</key>
+                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;cmd_set&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -357,6 +364,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Memcached Uptime</name>
@@ -364,7 +372,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;uptime&quot;]</key>
+                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;uptime&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -399,6 +407,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Memcached Used bytes</name>
@@ -406,7 +415,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;bytes&quot;]</key>
+                    <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;bytes&quot;]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -441,6 +450,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
             </items>
             <discovery_rules/>
@@ -489,7 +499,7 @@
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
                             <resource>
-                                <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;curr_items&quot;]</key>
+                                <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;curr_items&quot;]</key>
                                 <host>Template Memcached Info</host>
                             </resource>
                             <application/>
@@ -531,7 +541,7 @@
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
                             <resource>
-                                <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;curr_connections&quot;]</key>
+                                <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;curr_connections&quot;]</key>
                                 <host>Template Memcached Info</host>
                             </resource>
                             <application/>
@@ -552,7 +562,7 @@
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
                             <resource>
-                                <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;ratio&quot;]</key>
+                                <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;ratio&quot;]</key>
                                 <host>Template Memcached Info</host>
                             </resource>
                             <application/>
@@ -590,7 +600,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Memcached Info</host>
-                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;cmd_get&quot;]</key>
+                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;cmd_get&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -602,7 +612,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Memcached Info</host>
-                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;get_hits&quot;]</key>
+                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;get_hits&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -614,7 +624,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Memcached Info</host>
-                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;cmd_set&quot;]</key>
+                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;cmd_set&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -626,7 +636,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Memcached Info</host>
-                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;get_misses&quot;]</key>
+                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;get_misses&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -658,7 +668,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Memcached Info</host>
-                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;limit_maxbytes&quot;]</key>
+                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;limit_maxbytes&quot;]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -670,7 +680,7 @@
                     <type>0</type>
                     <item>
                         <host>Template Memcached Info</host>
-                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.HOST}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;bytes&quot;]</key>
+                        <key>getMemcachedInfo.py[&quot;-h&quot;,&quot;{HOST.CONN}&quot;,&quot;-p&quot;,&quot;11211&quot;,&quot;-a&quot;,&quot;bytes&quot;]</key>
                     </item>
                 </graph_item>
             </graph_items>
