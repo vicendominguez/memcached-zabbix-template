@@ -15,6 +15,7 @@ ITEMS = (
     'cmd_set',
     'curr_items',
     'curr_connections',
+    'evictions',
     'limit_maxbytes',
     'uptime',
     'get_hits',
