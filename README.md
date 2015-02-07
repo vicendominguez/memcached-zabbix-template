@@ -32,12 +32,6 @@ In the CentOS 6.5 RPM Zabbix installation is:
  /usr/lib/zabbix/externalscripts 
 ```
 
-Or, you can search the externalscripts folder by running:
-
-```
-find / -name externalscripts
-```
-
 Copy the python script there. A chmod/chown to get execution permission is necessary.
 
 Now, in your Zabbix frontend: Configuration-Templates section, Import bottom in the right side.
