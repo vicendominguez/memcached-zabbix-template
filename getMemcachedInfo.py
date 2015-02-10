@@ -43,7 +43,7 @@ class MemcachedStatsReader(object):
 
     #----------------------------------------------------------------------
     def _read_stats(self):
-        connection = Telnet(self._server, self._port)
+        connection = Telnet(self._server, self._port, timeout=30)
         connection.write('stats\n')
         connection.write('quit\n')
         self._stats_raw = connection.read_all()
