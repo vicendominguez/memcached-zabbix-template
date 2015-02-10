@@ -41,10 +41,16 @@ Choose the XML file and import.
 Apply this new template to your Memcached servers. 
 
 You don't need to modify the template if you are using the standard port to access to the Memcached (port 11211).
+If you need a different memcached port for the monitor, you will need to modify the {$MEMCACHEDRPORT} macro.
 
 It permits a fast configuration because of you can apply the same template to all your memcached servers without modification/installation in the agents.
 
 Of course, it can be to work in the agent/client side too.
+
+Triggers
+--------
+
+There is a trigger to detect memcached port issues 
 
 Environment
 -----------
@@ -53,7 +59,14 @@ I am using this script in my production environment:
 
 * Zabbix 2.2.x
 
+Thanks
+-------
+
+* [Zhujinhe](https://github.com/zhujinhe/)
+
+
 Screenshots
 -----------
 
 ![Screenshot](img/memcached-zabbix.jpg)
+
