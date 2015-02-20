@@ -60,8 +60,8 @@ class MemcachedStatsReader(object):
             parts = line.split()
             if not parts[1] in ITEMS:
                 continue
-        index = parts[1]
-        self._stats[index] = parts[2]
+            index = parts[1]
+            self._stats[index] = parts[2]
         ratio = (float (self._stats["get_hits"]) * 100 / float (self._stats["cmd_get"]) if self._stats["cmd_get"] != "0" else 0.0)
         self._stats["ratio"] = round (ratio, 2)
         usage = (float (self._stats["bytes"]) * 100 / float (self._stats["limit_maxbytes"]) if self._stats["limit_maxbytes"] != "0" else 0.0)
@@ -81,14 +81,14 @@ def main(host, port):
     try:
         opts, args = getopt.getopt(argv, "h:p:a:")
         for opt,arg in opts:
-        if opt  == '-h':
-            host = arg
-        if opt == '-p':
-            port = arg
-        if opt == '-a':
-            getInfo = arg
+            if opt  == '-h':
+                host = arg
+            if opt == '-p':
+                port = arg
+            if opt == '-a':
+                getInfo = arg
     except:
-    Usage()
+        Usage()
 
     data = MemcachedStatsReader(host, port)
     items = data.read()
