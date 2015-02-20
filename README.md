@@ -8,19 +8,21 @@ This is a minimal template to get info from your Memcached server from two possi
 
 Monitoring information by now:
 
-* 'bytes',
-* 'cmd_get',
-* 'cmd_set',
-* 'curr_items',
-* 'curr_connections',
-* 'limit_maxbytes',
-* 'uptime',
-* 'get_hits',
-* 'get_misses',
+* 'bytes'
+* 'cmd_get'
+* 'cmd_set'
+* 'curr_items'
+* 'curr_connections'
+* 'limit_maxbytes'
+* 'uptime'
+* 'get_hits'
+* 'get_misses'
+* 'evictions'
 
-And the special HIT-ratio in %:
+And the calculated items (HIT)-ratio and usage in %:
  
  * 'ratio'
+ * 'usage'
  
 Installation in the Zabbix Server
 ---------------------------------
@@ -53,15 +55,15 @@ Triggers
 There is a trigger to detect memcached port issues 
 
 Environment
------------
-
-I am using this script in my production environment:
+-----------:
 
 * Zabbix 2.2.x
 
-Thanks
--------
+Contributors
+------------
 
+* [Pascal Pflaum] (https://github.com/PascalPflaum)
+* [Tony Rogers] (https://github.com/teriyakichild)
 * [Zhujinhe](https://github.com/zhujinhe/)
 
 
@@ -69,4 +71,5 @@ Screenshots
 -----------
 
 ![Screenshot](img/memcached-zabbix.jpg)
+
 
