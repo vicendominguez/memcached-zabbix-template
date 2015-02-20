@@ -55,7 +55,7 @@ Triggers
 There is a trigger to detect memcached port issues 
 
 Environment
------------:
+-----------
 
 * Zabbix 2.2.x
 
