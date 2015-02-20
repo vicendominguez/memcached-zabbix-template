@@ -59,7 +59,10 @@ class MemcachedStatsReader(object):
                 continue
 	    index = parts[1]
 	    self._stats[index] = parts[2]
-        ratio = float (self._stats["get_hits"]) * 100 / float (self._stats["cmd_get"])
+        try:
+            ratio = float (self._stats["get_hits"]) * 100 / float (self._stats["cmd_get"])
+        except ZeroDivisionError:
+            ratio = 0.0
         self._stats["ratio"] = round (ratio, 2)
 
 #----------------------------------------------------------------------
